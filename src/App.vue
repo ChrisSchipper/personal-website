@@ -2,12 +2,17 @@
   <v-app>
     <v-main>
       <v-container>
-        <v-row>
+        <v-row >
           <v-col md="7">
             <div class="title-line">  </div>
           </v-col>
-          <v-col align-self="end" md="4">
+          <v-col class="subtitle-col-top" align-self="end" md="4">
               <p class="title-text">Christopher Schipper</p>
+          </v-col>
+        </v-row>
+        <v-row class="subtitle-row">
+          <v-col class="subtitle-col-bottom" offset-md="7" md="4">
+              <p class="subtitle-text">Software Developer</p>
           </v-col>
         </v-row>
       </v-container>
@@ -35,6 +40,7 @@ export default Vue.extend({
 
 <style lang="scss">
 @import 'src/sass/variables.scss';
+@import 'src/sass/global.scss';
 
 .title-text {
   display: flex;
@@ -48,6 +54,7 @@ export default Vue.extend({
   float: right;
   animation: 2s linear 1s reaveal forwards;
   margin-left:-355px;
+  margin-bottom: 0px !important;
 }
 
 .title-line {
@@ -59,20 +66,24 @@ export default Vue.extend({
     animation: slidein 2s;
 }
 
-//TODO: Maybe move these to their own animations file
-
-@keyframes reaveal {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
+.subtitle-text {
+  display: flex;
+  width: 100%;
+  opacity: 0%;
+  color: $main-brand;
+  font-family: 'Georgia', sans-serif;
+  font-weight:500;
+  font-size: 25px;
+  text-align: right;
+  float: right;
+  animation: 2s linear 1.5s reaveal forwards;
+  margin-left:-355px;
 }
 
-@keyframes slidein {
-  0% {
-    margin-right: 800px;
-  }
-  100% {
-    margin-left:0px;
-  }
+.subtitle-col-top {
+  padding-bottom:0px;
 }
-
+.subtitle-col-bottom {
+  padding-top:0px;
+}
 </style>

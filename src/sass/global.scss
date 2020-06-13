@@ -1,1 +1,25 @@
-@import "setup/colors.scss";
+.section-text {
+  color: rgba(255, 255, 255, 0.753);
+  font-family: Roboto, Roboto-light;
+  font-size: 20px;
+  padding-left: 20px;
+  font-weight: 300;
+}
+
+@keyframes reaveal {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slidein {
+  0% {
+    margin-right: 800px;
+  }
+  100% {
+    margin-left: 0px;
+  }
+}
