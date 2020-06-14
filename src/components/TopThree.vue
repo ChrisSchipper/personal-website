@@ -43,8 +43,13 @@
   </v-main>
 </template>
 
-<script>
-export default {};
+<script lang="ts">
+import Vue from "vue";
+
+export default Vue.extend({
+  name: "TopThree",
+  data: () => ({})
+});
 </script>
 
 <style scoped lang="scss">
