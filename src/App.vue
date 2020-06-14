@@ -41,7 +41,7 @@
         <v-icon>mdi-linkedin</v-icon>
       </v-btn>
       <v-btn
-        :href="'https://github.com/schippcj/personal-website'"
+        :href="'https://github.com/ChrisSchipper/personal-website'"
         target="_blank"
         rel="nofollow noopener noreferrer"
       >
