@@ -40,6 +40,14 @@
         <span>LinkedIn</span>
         <v-icon>mdi-linkedin</v-icon>
       </v-btn>
+      <v-btn
+        :href="'https://github.com/schippcj/personal-website'"
+        target="_blank"
+        rel="nofollow noopener noreferrer"
+      >
+        <span>GitHub</span>
+        <v-icon>mdi-github</v-icon>
+      </v-btn>
     </v-bottom-navigation>
     <div class="filler"></div>
   </v-app>
