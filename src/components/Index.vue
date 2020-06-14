@@ -22,7 +22,7 @@
       Experience
     },
 
-    data: () => ({ }),
+    data: () => ({}),
   })
 </script>
 
