@@ -50,8 +50,7 @@ class IntersectionAnimationApplier extends IntersectionAnimationApplierBase {
             if (entry.intersectionRatio >= 0.6) {
                 entry.target.classList.remove("fadeaway-element-popout");
                 entry.target.classList.add("reveal-element-popup")
-            } else
-            if (entry.intersectionRatio < 0.5) {
+            } else {
                 entry.target.classList.remove("reveal-element-popup")
                 entry.target.classList.add("fadeaway-element-popout");
             }

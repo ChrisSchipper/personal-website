@@ -39,14 +39,12 @@ export default Vue.extend({
 <style scoped lang="scss">
 .bio-card {
   padding-top: 30px;
-  opacity: 100%;
   transform: translate(0%, 0%);
   z-index: 1; /* Places this below the image container */
 }
 
 @media only screen and (min-width: 960px) {
   .profile-picture {
-    opacity: 100%;
     z-index: 2;
     transform: translateX(1000px);
     animation: image-slide 4s cubic-bezier(0.5, 0.5, 0, 1) forwards;
@@ -66,7 +64,6 @@ export default Vue.extend({
 
 @media only screen and (max-width: 960px) {
   .profile-picture {
-    opacity: 100%;
     z-index: 2;
     transform: translateX(1000px);
     animation: image-slide 4s cubic-bezier(0.5, 0.5, 0, 1) forwards;
