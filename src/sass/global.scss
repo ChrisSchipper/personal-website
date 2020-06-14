@@ -1,0 +1,18 @@
+@import "./animations.scss";
+
+.section-text {
+  color: rgba(255, 255, 255, 0.753);
+  font-family: Roboto, Roboto-light;
+  font-size: 20px;
+  padding-left: 20px;
+  font-weight: 300;
+}
+
+.reveal-element-popup {
+  opacity: 0%;
+  animation: 0.5s linear reveal-popup forwards;
+}
+
+.fadeaway-element-popout {
+  animation: 0.5s linear fadeaway-popout forwards;
+}
