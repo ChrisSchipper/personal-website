@@ -136,6 +136,7 @@ interface ExperienceBase {
 }
 
 .timeline-card {
+  opacity: 0%;
   border-color: $main-brand !important;
   border-width: 2px !important;
 }
