@@ -41,6 +41,7 @@ export default Vue.extend({
   .bio-card {
     padding-top: 30px;
     z-index: 1; /* Places this below the image container */
+    transform: translate(0%, 0%); 
   }
 
   .profile-picture {
