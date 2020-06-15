@@ -55,7 +55,7 @@ export default Vue.extend({
 <style scoped lang="scss">
 .about-section {
   opacity: 0%;
-  animation: 2s linear 2s reaveal forwards;
+  animation: 2s linear 2s reveal forwards;
 }
 .icon-center {
   text-align: center;

@@ -105,7 +105,7 @@ export default Vue.extend({
     font-size: 50px;
     text-align: right;
     float: right;
-    animation: 2s linear 1s reaveal forwards;
+    animation: 2s linear 1s reveal forwards;
     margin-left: -355px;
     margin-bottom: 0px !important;
   }
@@ -129,7 +129,7 @@ export default Vue.extend({
     font-size: 25px;
     text-align: right;
     float: right;
-    animation: 2s linear 1.5s reaveal forwards;
+    animation: 2s linear 1.5s reveal forwards;
     margin-left: -355px;
   }
 }
@@ -143,7 +143,7 @@ export default Vue.extend({
     font-weight: 500;
     font-size: 50px;
     text-align: center;
-    animation: 2s linear 1s reaveal forwards;
+    animation: 2s linear 1s reveal forwards;
     margin-bottom: 0px !important;
   }
 
@@ -159,7 +159,7 @@ export default Vue.extend({
     font-weight: 500;
     font-size: 25px;
     text-align: center;
-    animation: 2s linear 1.5s reaveal forwards;
+    animation: 2s linear 1.5s reveal forwards;
   }
 }
 </style>

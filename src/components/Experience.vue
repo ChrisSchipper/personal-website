@@ -12,7 +12,7 @@
             <template v-slot:icon></template>
             <span slot="opposite">{{ exp.date }}</span>
             <v-card class="timeline-card" color="#17161E" outlined :id="`timeline-${exp.id}`">
-              <v-card-title class="headline">{{ exp.company }}</v-card-title>
+              <v-card-title class="timeline-card-title">{{ exp.company }}</v-card-title>
               <v-card-subtitle>{{ exp.title }}
                 <div v-if="smallScreen">{{ exp.date }} </div>
               </v-card-subtitle>
@@ -139,5 +139,9 @@ interface ExperienceBase {
   opacity: 0%;
   border-color: $main-brand !important;
   border-width: 2px !important;
+}
+
+.timeline-card-title {
+  word-break: keep-all;
 }
 </style>

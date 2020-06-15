@@ -35,7 +35,7 @@
       opacity: 0%;
       float: right;
       margin-right: 300px;
-      animation: 2s linear 3s reaveal forwards;
+      animation: 2s linear 3s reveal forwards;
     }
   }
 
@@ -43,7 +43,7 @@
     .contact-btn {
       opacity: 0%;
       float: right;
-      animation: 2s linear 3s reaveal forwards;
+      animation: 2s linear 3s reveal forwards;
     }
   }
 

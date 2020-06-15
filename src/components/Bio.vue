@@ -2,7 +2,7 @@
   <v-main>
     <v-row>
       <v-col cols="12" offset-md="2" md="2" sm="12" class="profile-picture">
-        <v-avatar size="250" class="side-nav-profile-picture">
+        <v-avatar size="250">
           <img src="./../assets/profile-pic.png" />
         </v-avatar>
       </v-col>
@@ -37,13 +37,12 @@ export default Vue.extend({
 </script>
 
 <style scoped lang="scss">
-.bio-card {
-  padding-top: 30px;
-  transform: translate(0%, 0%);
-  z-index: 1; /* Places this below the image container */
-}
-
 @media only screen and (min-width: 960px) {
+  .bio-card {
+    padding-top: 30px;
+    z-index: 1; /* Places this below the image container */
+  }
+
   .profile-picture {
     z-index: 2;
     transform: translateX(1000px);
@@ -63,22 +62,23 @@ export default Vue.extend({
 }
 
 @media only screen and (max-width: 960px) {
+  .bio-card {
+    opacity: 0%;
+    padding-top: 30px;
+    z-index: 1; /* Places this below the image container */
+    animation: 2s linear 2.5s reveal forwards;
+  }
+
   .profile-picture {
+    opacity: 0%;
     z-index: 2;
-    transform: translateX(1000px);
-    animation: image-slide 4s cubic-bezier(0.5, 0.5, 0, 1) forwards;
+    animation: 2s linear 2s reveal forwards;
     text-align: center;
   }
 
   // Slide-in CSS Effects taken/modified from https://css-tricks.com/slide-an-image-to-reveal-text-with-css-animations/
   .fading-effect {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    width: 100%;
-    background: $dark-shade;
-    animation: text-slide 4s 1s cubic-bezier(0.5, 0.5, 0, 1) forwards;
+    display: none;
   }
 }
 
